@@ -1,0 +1,72 @@
+#work-list{
+	position: relative;
+	top: 100px;
+	background-color: #f7f7f7;
+}
+
+
+.item-col{
+	padding: 3% 5%;
+}
+
+.todo-list{
+	padding: 0 2%;
+}
+
+.todo-items{
+	padding: 13px;
+	border-bottom: 1px solid #e7e7e7;
+	color: #2c7873;
+	font-size: 1.1rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	transition: transform 0.3s;
+}
+
+.todo-items:first-child{
+	border-top: 1px solid #e7e7e7;
+}
+
+.todo-items:nth-child(even){
+	background-color: #f7f7f7;
+}
+
+.item-description{
+	float: left;
+}
+
+.item-delete{
+	float: right;
+}
+
+.item-delete--btn{
+	font-size: 22px; 
+	background: none;
+	border: none;
+	cursor: pointer;
+	/*display: none;*/
+	vertical-align: center;
+	line-height: 1;
+	margin-left: 20px;
+	/*transition: transform 0.3s;*/
+	color: #d63447;
+}
+
+.item-delete--btn:focus{
+	outline: none;
+}
+
+.item-delete--btn:active{
+	transform: translateY(3px);
+}
+
+.todo-items:hover .item-delete--btn{
+	display: block;
+}
+
+.todo-items:hover{
+	transform: translateX(-10px);
+}
+
+.outer-box{
+	border: 1px solid black;
+}
